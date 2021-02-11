@@ -1,6 +1,6 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "proj01",
+  "appId": "com.github.loetscherr.bluesky",
+  "appName": "bluesky",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",
