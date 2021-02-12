@@ -28,9 +28,14 @@ const routes: Routes = [
     loadChildren: () => import('./pages/about/about.module').then( m => m.AboutPageModule)
   },
   {
-    path: '*/*',
-    loadChildren: () => import('./pages/e404/e404.module').then( m => m.E404PageModule)
+    path: 'view/:id',
+    loadChildren: () => import('./pages/view/view.module').then( m => m.ViewPageModule)
   },
+  {
+    path: '**',
+    loadChildren: () => import('./pages/e404/e404.module').then( m => m.E404PageModule)
+  }
+  
 
 ];
 
