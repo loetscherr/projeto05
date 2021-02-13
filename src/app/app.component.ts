@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+
+import { AngularFireAuth } from '@angular/fire/auth';
+
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -6,6 +9,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  constructor() {}
+  constructor(
+    public auth: AngularFireAuth,
+  ) {}
 }
-// biscoito
