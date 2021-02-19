@@ -1,5 +1,5 @@
 {
-  "appId": "com.github.loetscherr.bluesky",
+  "appId": "bluesky.com.github.loetscherr",
   "appName": "bluesky",
   "bundledWebRuntime": false,
   "npmClient": "npm",

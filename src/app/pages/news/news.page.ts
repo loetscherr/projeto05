@@ -27,11 +27,17 @@ export class NewsPage implements OnInit {
 
     // 4. Obtendo as notícias da API REST (JSON) usando HTTP
     this.http.get(this.apiURL).subscribe(
-      (data) => {
+      (data: any) => {
 
         // 5. Atribui à view de notícias
         this.newsList = data.articles.slice(0, this.apiItens);
       }
     );
   }
+
+  readNews(url: string){
+    window.open(url);
+    return false;
+  }
+
 }
