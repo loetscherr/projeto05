@@ -3,12 +3,26 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-
-    <ion-title>Início</ion-title>
+    <ion-title>Notícias</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="ion-padding">
-  <h2>Noticias</h2>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt officia sit blanditiis facilis vero sapiente quis illo. Nostrum deleniti, labore expedita excepturi in sit, eos ipsa omnis voluptatem tenetur reprehenderit.</p>
+<ion-content class="ion-padding" *ngIf="newsList">
+
+  <div *ngFor="let item of newsList" class="newsItem">
+
+    <ion-card class="ion-no-margin ion-margin-bottom" (click)="readNews(item.url)">
+
+      <img *ngIf="item.urlToImage" src="{{ item.urlToImage }}" alt="Imagem indisponível" title="{{ item.title }}">
+      <ion-card-header>
+        <ion-card-subtitle>{{ item.source.name }}</ion-card-subtitle>
+        <ion-card-title>{{ item.title }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content *ngIf="item.description === ''">{{ item.content }}</ion-card-content>
+      <ion-card-content *ngIf="item.description !== ''">{{ item.description }}</ion-card-content>
+
+    </ion-card>
+
+  </div>
+
 </ion-content>

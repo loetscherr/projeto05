@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 
 // 1. Importa dependências
 import { AngularFireAuth } from '@angular/fire/auth';
-import { profile } from 'console';
 
 @Component({
   selector: 'app-profile',

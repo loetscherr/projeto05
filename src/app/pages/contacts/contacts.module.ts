@@ -8,12 +8,19 @@ import { ContactsPageRoutingModule } from './contacts-routing.module';
 
 import { ContactsPage } from './contacts.page';
 
+// iMPORTA FORMULÁRIOS DO ANGULAR
+import {ReactiveFormsModule} from '@angular/forms';
+
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ContactsPageRoutingModule
+    ContactsPageRoutingModule,
+
+    // Importar o executive 
+    ReactiveFormsModule
   ],
   declarations: [ContactsPage]
 })
