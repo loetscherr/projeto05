@@ -1,0 +1,13 @@
+{
+  "appId": "bluesky.com.github.loetscherr",
+  "appName": "bluesky",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}
